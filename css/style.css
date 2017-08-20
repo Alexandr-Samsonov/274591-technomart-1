@@ -1,0 +1,16 @@
+body {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #000000;
+}
+
+.page-title,
+.section-title {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 30px;
+	font-weight: normal;
+	line-height: 30px;
+	color: #3d546e;
+}

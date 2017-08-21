@@ -9,7 +9,10 @@
 		<header class="main-header">
 			<div class="main-header-top">
 				<img src="#" width="" height="" alt="Логотип Техномарта">
-				<input class="search" type="search" name="search" placeholder="Поиск:">
+				<form class="search" action="https://echo.htmlacademy.ru" method="get">
+					<label class="visually-hidden" for="search-site">Поиск</label>
+  				<input class="search-input" type="search" name="search" placeholder="Поиск:" id="search-site">
+  			</form>
 				<a class="header-top-item" href="#">Закладки: 0</a>
 				<a class="header-top-item" href="#">Корзина: 0</a>
 				<a class="header-top-checkout" href="#">Оформить заказ</a>
@@ -26,8 +29,12 @@
 					<p class="contacts-address">г. Санкт-Петербург, ул. Б. Конюшенская, д.19/8</p>
 				</section>
 				<ul class="user-navigation">
-					<li class="login-link">Войти</li>
-					<li class="checkin-link">Регистрация</li>
+					<li class="login-link">
+						<a href="">Войти</a>
+					</li>
+					<li class="checkin-link">
+						<a href="">Регистрация</a>
+					</li>
 				</ul>
 				<nav class="main-navigation">
 					<ul class="site-navigation">
@@ -69,14 +76,14 @@
 					<a class="preview-block-link" href="#">Бесплатно</a>
 				</div>
 				<div class="preview-slider">
-					<div class="preview-slider1">
-						<p class="preview-slider-label">Перфораторы</p>
+					<div class="preview-slider-1">
+						<h3 class="preview-slider-label">Перфораторы</h3>
 						<p class="preview-slider-description">Настоящие мужские игрушки</p>
 						<a class="button" href="catalog.html">Открыть каталог</a>
 						<img src="img/preview-slider1.jpg" alt="Перфораторы" width="620" height="266">
 					</div>
-					<div class="preview-slider2">
-						<p class="preview-slider-label">Дрели</p>
+					<div class="preview-slider-2">
+						<h3 class="preview-slider-label">Дрели</h3>
 						<p class="preview-slider-description">Соседям на радость!</p>
 						<a class="button" href="catalog.html">Открыть каталог</a>
 						<img src="img/preview-slider2.jpg" alt="Дрели" width="620" height="266">
@@ -92,6 +99,8 @@
 					<li class="catalog-item">
 						<h3 class="good-label">Перфоратор Bosch BFG 9000</h3>
 						<img src="img/product-1.jpg" width="215" height="164" alt="Перфоратор Bosch BFG 9000">
+						<button class="catalog-button-buy" type="button">Купить</button>
+						<button class="catalog-button-cart" type="button">В закладки</button>
 						<p class="price-old">32500 Р</p>
 						<p class="price-new">25500 Р</p>
 					</li>
@@ -99,6 +108,8 @@
 					<li class="catalog-item">
 						<h3 class="good-label">Перфоратор Bosch BFG 3000</h3>
 						<img src="img/product-2.jpg" width="215" height="164" alt="Перфоратор Bosch BFG 3000">
+						<button class="catalog-button-buy" type="button">Купить</button>
+						<button class="catalog-button-cart" type="button">В закладки</button>
 						<p class="price-old">22500 Р</p>
 						<p class="price-new">15500 Р</p>
 					</li>
@@ -106,6 +117,8 @@
 					<li class="catalog-item">
 						<h3 class="good-label">Перфоратор Bosch BFG 6000</h3>
 						<img src="img/product-3.jpg" width="216" height="164" alt="Перфоратор Bosch BFG 6000">
+						<button class="catalog-button-buy" type="button">Купить</button>
+						<button class="catalog-button-cart" type="button">В закладки</button>
 						<p class="price-old">30500 Р</p>
 						<p class="price-new">25500 Р</p>
 					</li>
@@ -113,6 +126,8 @@
 					<li class="catalog-item">
 						<h3 class="good-label">Перфоратор Bosch BFG 2000</h3>
 						<img src="img/product-4.jpg" width="215" height="164" alt="Перфоратор Bosch BFG 2000">
+						<button class="catalog-button-buy" type="button">Купить</button>
+						<button class="catalog-button-cart" type="button">В закладки</button>
 						<p class="price-new">12500 Р</p>
 					</li>
 
@@ -189,11 +204,30 @@
 					</li>
 				</ul>
 				<div class="services-slider">
-					<p class="services-slider-label">Доставка</p>
-					<p class="services-slider-description">Мы с удовольствием доставим ваш товар прямо<br>
-					к вашему подъезду совершенно бесплатно!<br>
-					Ведь мы неплохо зарабатываем,<br>
-					поднимая его на этаж!</p>
+					<div class="slider-delivery">
+						<h3 class="services-slider-label">Доставка</h3>
+						<p class="services-slider-description">Мы с удовольствием доставим ваш товар прямо<br>
+						к вашему подъезду совершенно бесплатно!<br>
+						Ведь мы неплохо зарабатываем,<br>
+						поднимая его на этаж!</p>
+						<img src="img/services-slider1.jpg" width="468" height="261" alt="Доставка">
+					</div>
+					<div class="slider-guarantee">
+						<h3 class="services-slider-label">Гарантия</h3>
+						<p class="services-slider-description">Если купленный товар поломается или заискрит,<br>
+						а также в случае пожара, спровоцированного его возгоранием,<br>
+						вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+						сгоревший товар на новый.<br>
+						Дом уж восстановите как-нибудь сами.</p>
+						<img src="img/services-slider2.jpg" width="389" height="283" alt="Гарантия">
+					</div>
+					<div class="slider-credit">
+						<h3 class="services-slider-label">Кредит</h3>
+						<p class="services-slider-description">Залезть в долговую яму стало проще!<br>
+						Кредитные консультанты придут вам на помощь</p>
+						<button class="button" type="button">Отправить заявку</button>
+						<img src="img/services-slider3.jpg" width="465" height="285" alt="Кредит">
+					</div>
 				</div>
 			</section>
 			<section class="description">
@@ -210,7 +244,9 @@
 			<section class="main-contacts">
 				<h2 class="section-title">Контакты</h2>
 				<p>Вы можете забрать товар сами, заехав в наш офис:</p>
-				<img src="img/map.jpg" width="300" height="158" alt="Адрес на карте">
+				<a href="">
+					<img src="img/map.jpg" width="300" height="158" alt="Адрес на карте. г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+				</a>
 				<a class="button" href="">Заблудились? Напишите нам!</a>
 			</section>
 		</main>
@@ -236,9 +272,9 @@
 				<p class="footer-copyright">2010-2016 Компания "Техномарт" Все права защищены</p>
 				<div class="footer-social">
 					<ul>
-						<li><a class="social-button" href="">Вконтакте</li>
-						<li><a class="social-button" href="">Фейсбук</li>
-						<li><a class="social-button" href="">Инстаграм</li>
+						<li><a class="social-button" href="">Вконтакте</a></li>
+						<li><a class="social-button" href="">Фейсбук</a></li>
+						<li><a class="social-button" href="">Инстаграм</a></li>
 					</ul>
 				</div>
 				<p class="footer-feedback">
@@ -255,24 +291,26 @@
 			<h2 class="visually-hidden">Обратная связь</h2>
 			<form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
 				<p>
-					Ваше имя:
-					<input class="write-us-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+					<label for="your-name">Ваше имя:</label>
+					<input class="write-us-name" type="text" name="name" placeholder="Представьтесь, пожалуйста" id="your-name">
 				</p>
 				<p>
-					Ваш e-mail:
-					<input class="write-us-email" type="text" name="email" placeholder="Для отправки ответа">
+					<label for="your-email">Ваш e-mail:</label>
+					<input class="write-us-email" type="text" name="email" placeholder="Для отправки ответа" id="your-email">
 				</p>
 				<p>
-					Текст письма:
-					<textarea class="write-us-text" name="text">В свободной форме</textarea>
+					<label for="your-text">Текст письма:</label>
+					<textarea class="write-us-text" name="text" id="your-text">В свободной форме</textarea>
 				</p>
 				<button class="button write-us-button" type="submit">Отправить</button>
 			</form>
-			<span class="modal-close">x</span>
+			<button class="modal-close" type="button">Закрыть</button>
 		</section>
 		<section class="modal modal-map">
 			<h2 class="visually-hidden">Как до нас добраться</h2>
-			<span class="modal-close">x</span>
+			<img src="img/map-big-1.jpg" width="940" height="446" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+			<img src="img/map-big-2.jpg" width="940" height="446" alt="Санкт-Петербург, ул. Строителей, д. 15">
+			<button class="modal-close" type="button">Закрыть</button>
 		</section>
 	</body>
 </html>

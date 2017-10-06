@@ -15,8 +15,9 @@
 				<div class="container">
 					<a class="link-logo" href="index.html">Техномарт</a>
 					<form class="search" action="https://echo.htmlacademy.ru" method="get">
-	  				<input class="search-input" type="text" name="search" id="input-search">
-	  				<label for="input-search">Поиск:</label>
+	  				<input class="search-input" type="text" name="search" id="input-search" placeholder="Поиск:">
+	  				<label class="visually-hidden" for="input-search">Поиск:</label>
+	  				<button class="search-button" type="submit">Поиск</button>
 	  			</form>
 	  			<a class="header-top-item top-item-bookmark" href="#">Закладки: 0</a>
 	  			<a class="header-top-item header-basket top-item-basket" href="#">Корзина: 10</a>
@@ -42,7 +43,7 @@
 	  						<a class="user-name-item" href="#">Равшан Джамшутович</a>
 	  					</p>
 							<p class="user-logout-wrapper">
-								<a class="visually-hidden" href="#">Выход</a>
+								<a class="user-logout-item" href="#">Выход</a>
 							</p>
 	  				</div>
 	  				<a class="user-info" href="#">Мои заказы</a>
@@ -307,7 +308,7 @@
   			</div>
   		</div>
   	</footer>
-  	<section class="cart">
+  	<section class="modal cart">
   		<div class="cart-wrapper">
 	  		<h2>Товар добавлен в корзину!</h2>
 	  		<div class="modal-bottom">
@@ -317,5 +318,6 @@
 	  		<button class="modal-close" type="button">Закрыть</button>
   		</div>
   	</section>
+  	<script src="js/cart.js"></script>
 	</body>
 </html>

@@ -13,10 +13,11 @@
 		<header class="main-header">
 			<div class="main-header-top">
 				<div class="container">
-					<a class="link-logo" href="#">Техномарт</a>
+					<a class="link-logo">Техномарт</a>
 					<form class="search" action="https://echo.htmlacademy.ru" method="get">
-	  				<input class="search-input" type="text" name="search" id="input-search">
-	  				<label for="input-search">Поиск:</label>
+	  				<input class="search-input" type="text" name="search" id="input-search" placeholder="Поиск:">
+	  				<label class="visually-hidden" for="input-search">Поиск:</label>
+	  				<button class="search-button" type="submit">Поиск</button>
 	  			</form>
 					<a class="header-top-item top-item-bookmark" href="#">Закладки: 0</a>
 					<a class="header-top-item top-item-basket" href="#">Корзина: 0</a>
@@ -214,15 +215,24 @@
 					<p class="paragraph-description">Хороший интернет-магазин отличается от плохого не только ценами!<br>
 					Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 					<div class="services-wrapper">
+						<input type="radio" name="toggle-2" id="service-btn-1" checked>
+						<input type="radio" name="toggle-2" id="service-btn-2">
+						<input type="radio" name="toggle-2" id="service-btn-3">
 						<ul class="services-menu">
 							<li class="services-menu-item">
-								<a class="item-action" href="">Доставка</a>
+								<label for="service-btn-1">
+									<a class="item-action">Доставка</a>
+								</label>
 							</li>
 							<li class="services-menu-item">
-								<a href="">Гарантия</a>
+								<label for="service-btn-2">
+									<a>Гарантия</a>
+								</label>
 							</li>
 							<li class="services-menu-item">
-								<a href="">Кредит</a>
+								<label for="service-btn-3">
+									<a>Кредит</a>
+								</label>
 							</li>
 						</ul>
 						<div class="services-slider">
@@ -270,13 +280,13 @@
 					<a  class="main-contact-map" href="map.html">
 						<img src="img/map.jpg" width="300" height="158" alt="Адрес на карте. г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
 					</a>
-					<a class="button" href="writeus.html">Заблудились? Напишите нам!</a>
+					<a class="button write-us-feedback" href="writeus.html">Заблудились? Напишите нам!</a>
 				</section>
 			</div>
 		</main>
 		<footer class="main-footer">
 			<div class="footer-top container">
-				<a class="link-logo link-logo-footer" href="index.html">Техномарт</a>
+				<a class="link-logo link-logo-footer">Техномарт</a>
 				<ul class="footer-site-navigation">
 					<li><a href="#">Компания</a></li>
 					<li><a href="#">Новости</a></li>
@@ -358,8 +368,22 @@
 				<h2 class="visually-hidden">Как до нас добраться</h2>
 				<img src="img/map-big-1.jpg" width="940" height="446" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
 				<img src="img/map-big-2.jpg" width="940" height="446" alt="Санкт-Петербург, ул. Строителей, д. 15">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59894241237!2d30.320894615682374!3d59.93879686904838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1506269023647" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
 				<button class="modal-close" type="button">Закрыть</button>
 			</div>
 		</section>
+		<section class="modal cart">
+  		<div class="cart-wrapper">
+	  		<h2>Товар добавлен в корзину!</h2>
+	  		<div class="modal-bottom">
+	  			<a class="button" href="#">Оформить заказ</a>
+	  			<a class="button button-continue" href="#">Продолжить покупки</a>
+	  		</div>
+	  		<button class="modal-close" type="button">Закрыть</button>
+  		</div>
+  	</section>
+		<script src="js/modal-write-us.js"></script>
+		<script src="js/modal-map.js"></script>
+		<script src="js/cart.js"></script>
 	</body>
 </html>
